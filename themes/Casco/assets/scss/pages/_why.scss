@@ -1,0 +1,50 @@
+.why-we {
+  .why-we-item {
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+    .title {
+      margin-bottom: 1.5rem;
+      span {
+        font-weight: 900;
+      }
+    }
+    .why-box-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1.5rem;
+      min-width: 80px;
+      max-width: 80px;
+      min-height: 80px;
+      max-height: 80px;
+      border-radius: 50%;
+      padding: 1rem;
+      background-color: #95c41e;
+      background-image: -webkit-linear-gradient(4deg, #b2d35e, #c5dd8a);
+      background-image: -moz-linear-gradient(4deg, #b2d35e, #c5dd8a);
+      background-image: -o-linear-gradient(4deg, #b2d35e, #c5dd8a);
+      background-image: -ms-linear-gradient(4deg, #b2d35e, #c5dd8a);
+      background-image: linear-gradient(4deg, #b2d35e, #c5dd8a);
+    }
+  }
+}
+@media (max-width: 992px) {
+  .why-we .why-we-item .title {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  .why-we .why-we-item {
+    font-size: 1rem;
+  }
+  .why-we .why-we-item {
+    margin-bottom: 2rem;
+  }
+  .why-we .why-we-item .why-box-img {
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    margin-right: 1rem;
+    padding: 0.8rem;
+  }
+}

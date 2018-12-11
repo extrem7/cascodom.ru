@@ -1,0 +1,408 @@
+.home-page {
+  &:after {
+    display: block;
+    content: '';
+    background-image: radial-gradient(circle 2381px at center, #c5dd8a 0%, #b2d35e 100%);
+    max-width: 915px;
+    max-height: 705px;
+    width: 48vw;
+    height: 45vw;
+    position: absolute;
+    right: -19%;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.casco-list {
+  .casco-item {
+    z-index: 1;
+    position: relative;
+    padding: 0.4rem 2.3rem;
+    cursor: pointer;
+    transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
+    &:nth-child(1) {
+      background-color: #c5dd8a;
+    }
+    &:nth-child(2) {
+      background-color: #b2d35e;
+    }
+    &:nth-child(3) {
+      background-color: #95c41e;
+    }
+    .casco-price,
+    .casco-name {
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .casco-price {
+      font-size: 36px;
+      span {
+        font-size: 24px;
+      }
+    }
+    &:hover {
+      z-index: 10;
+      transform: scale(1.1);
+      box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.24);
+    }
+    &:after {
+      content: 'i';
+      width: 20px;
+      height: 20px;
+      color: #95c41e;
+      text-align: center;
+      line-height: 21px;
+      background-color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 50%;
+      position: absolute;
+      right: -11px;
+      top: -8px;
+      z-index: 1;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.24);
+    }
+  }
+}
+.car-selected {
+  position: relative;
+  margin-top: 5rem;
+  z-index: 999;
+  .car-img {
+    margin-top: 3rem;
+  }
+  .car-link {
+    margin-top: 2rem;
+  }
+  .car-model {
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: 500;
+    span {
+      font-size: 24px;
+      color: $green;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  .car-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 37px;
+    color: #454545;
+    line-height: 1;
+    span {
+      font-size: 55px;
+      position: relative;
+      &:after {
+        content: '';
+        background-image: url(../img/decor-top.png);
+        position: absolute;
+        top: -67px;
+        right: -66px;
+        width: 149px;
+        height: 129px;
+      }
+    }
+  }
+}
+.calculator {
+  margin-top: 3rem;
+  .custom-control-label {
+    padding-top: 3px;
+    padding-left: 5px;
+  }
+  .title {
+    margin-bottom: 1.5rem;
+  }
+  .form-group {
+    margin-bottom: 3rem;
+  }
+  .select-group {
+    .title {
+      font-size: 15px;
+      margin-right: 0.5rem;
+      margin-bottom: 0;
+    }
+    .custom-select {
+      width: 88px;
+      font-size: 16px;
+    }
+  }
+  .old-car {
+    width: 73%;
+    background: #d0d0d0;
+    height: 2px;
+    float: right;
+    margin-right: 8px;
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    span {
+      color: #d0d0d0;
+      position: absolute;
+      top: -18px;
+      padding: 0.4rem;
+      background: #f6f6f6;
+      display: block;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 50px;
+      font-weight: 500;
+    }
+    &:after,
+    &:before {
+      content: '';
+      width: 2px;
+      height: 10px;
+      background: #d0d0d0;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+    }
+    &:after {
+      right: 0;
+      left: auto;
+    }
+  }
+}
+.vue-slider-component .vue-slider {
+  height: 3px!important;
+}
+.price-slider.vue-slider-component .vue-slider,
+.price-slider.vue-slider-component .vue-slider-process {
+  background-color: #c5dd8a!important;
+}
+.vue-slider-component .vue-slider-dot .vue-slider-dot-handle {
+  background-color: $yellow!important;
+  box-shadow: none!important;
+  position: relative;
+  &:after {
+    content: '|||';
+    position: absolute;
+    color: #fff;
+    margin: 4px auto;
+    width: 11px;
+    display: block;
+    height: 13px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+  }
+}
+.vue-slider-component .vue-slider-dot {
+  width: 26px!important;
+  height: 26px!important;
+  top: -12px !important;
+  left: -6px !important;
+}
+.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-top {
+  top: 5px!important;
+  left: 50%;
+  transform: translate(-50%,100%)!important;
+}
+.vue-slider-component .vue-slider-piecewise-item {
+  width: 3px!important;
+  height: 13px!important;
+}
+.vue-slider-component .vue-slider-piecewise-dot {
+  border-radius: 0!important;
+  background-color: #d0d0d0!important;
+  top: 2px!important;
+}
+
+.year-slider.vue-slider-piecewise-label, .vue-slider-component.vue-slider-horizontal .vue-slider-piecewise-label {
+  font-size: 16px!important;
+  color: #454545!important;
+}
+.year-slider.vue-slider-component .vue-slider,
+.year-slider.vue-slider-component .vue-slider-process {
+  background-color: #d0d0d0!important;
+}
+.year-slider.vue-slider-component .vue-slider-piecewise-item:nth-child(1) .vue-slider-piecewise-dot {
+  background-color: #c5dd8a!important;
+}
+.year-slider.vue-slider-component .vue-slider-piecewise-item:nth-child(1) .vue-slider-piecewise-label {
+  color: $green!important;
+  font-weight: 500;
+}
+.vue-slider-component .vue-slider-piecewise-item:first-child .vue-slider-piecewise-dot, .vue-slider-component .vue-slider-piecewise-item:last-child .vue-slider-piecewise-dot {
+  visibility: visible!important;
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .home-page {
+    &:after {
+      max-width: 595px;
+      max-height: 595px;
+    }
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .home-page {
+    &:after {
+      max-width: 687px;
+      max-height: 687px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .home-page {
+    &:after {
+      display: none;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .home-page {
+    &:after {
+      bottom: auto;
+      top: 5%;
+      right: -13%;
+      min-width: 500px;
+      min-height: 500px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .calculator {
+    margin-top: 1rem;
+    .title {
+      margin-bottom: 0.8rem;
+    }
+    .old-car {
+      span {
+        padding: 0.2rem;
+      }
+    }
+    .select-group {
+      margin-bottom: 1rem!important;
+      &+.form-group {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .home-page {
+    &:after {
+      top: 1%;
+      right: -28%;
+    }
+  }
+}
+  @media (max-width: 576px) {
+    .home-page {
+      &:after {
+        top: 4%;
+        right: -30%;
+        min-width: 400px;
+        min-height: 400px;
+      }
+    }
+  }
+@media (max-width: 470px) {
+  .home-page {
+    &:after {
+      top: 3%;
+      min-width: 330px;
+      min-height: 330px
+    }
+  }
+  .car-selected .car-link {
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 400px) {
+  .home-page {
+    &:after {
+      top: 1%;
+      right: -40%;
+    }
+  }
+}
+@media (min-width: 1300px) {
+  .car-selected {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 1300px) {
+  .casco-list .casco-item {
+    padding: 0.4rem 2rem;
+  }
+  .casco-list .casco-item .casco-price {
+    font-size: 24px;
+  }
+  .casco-list .casco-item .casco-price span,
+  .casco-list .casco-item .casco-name {
+    font-size: 18px;
+  }
+  .car-selected .car-title span {
+    font-size: 40px;
+  }
+  .car-selected .car-title {
+    font-size: 30px;
+  }
+  .car-selected .car-title span:after {
+    top: -71px;
+    right: -71px;
+  }
+  .calculator .select-group {
+    flex-direction: column;
+    align-items: flex-start!important;
+  }
+}
+@media (max-width: 992px) {
+  .home-page {
+    flex-direction: column-reverse;
+  }
+  .car-selected {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 470px) {
+  .year-slider.vue-slider-piecewise-label, .vue-slider-component.vue-slider-horizontal .vue-slider-piecewise-label {
+    font-size: 12px!important;
+  }
+  .car-selected .car-title span {
+    font-size: 26px;
+  }
+  .car-selected .car-title {
+    font-size: 18px;
+  }
+  .car-selected .car-title span:after {
+    top: -36px;
+    right: -40px;
+    background-size: cover;
+    width: 72px;
+    height: 63px;
+  }
+  .car-selected .car-model {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .car-selected .car-model span {
+    font-size: 1.2rem;
+  }
+  .casco-list .casco-item {
+    padding: 0.4rem 0.8rem;
+  }
+  .casco-list .casco-item .casco-price span,
+  .casco-list .casco-item .casco-name {
+    font-size: 0.875rem;
+  }
+  .casco-list .casco-item .casco-price {
+    font-size: 21px;
+  }
+  .calculator .title {
+    font-size: 0.875rem;
+  }
+  body.page-home {
+    .main-indent {
+      padding-top: 2rem;
+    }
+  }
+}

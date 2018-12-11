@@ -1,0 +1,80 @@
+//start bootstrap 4 grid to bootstrap 3
+@media (min-width: 768px) {
+  .container {
+    width: 750px !important;
+    max-width: 750px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px !important;
+    max-width: 970px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px !important;
+    max-width: 1170px !important;
+  }
+}
+@media (min-width: 1300px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container {
+    width: 1266px !important;
+    max-width: 1266px !important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+}
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  transition: color .2s ease-in-out, background-color .2s ease-in-out,border-color .2s ease-in-out,box-shadow .2s ease-in-out;
+  outline: none!important;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  outline: none!important;
+}
+ul {
+  padding: 0 0 0 20px;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+textarea {
+  resize: none;
+  height: auto!important;
+}
+select {
+  cursor: pointer;
+}
+input,
+select,
+textarea {
+  outline: none!important;
+}
+body {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+iframe {
+  width: 100%;
+  border: 0;
+}

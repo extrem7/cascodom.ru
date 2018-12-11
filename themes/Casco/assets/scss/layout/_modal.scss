@@ -1,0 +1,220 @@
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+.geoapi-modal {
+  padding: 1rem;
+}
+.detail {
+  color: #848484;
+}
+.modal {
+  padding-top: 10px;
+  .accept {
+    font-size: 0.875rem;
+    padding-top: 3px;
+    padding-left: 5px;
+    a {
+      color: $green;
+      text-decoration: underline;
+    }
+  }
+  .separate {
+    max-width: 440px;
+    height: 2px;
+    background-color: #dedede;
+    margin: 2.5rem auto 1.5rem auto;
+  }
+  button.close {
+    z-index: 10;
+    width: 34px;
+    height: 34px;
+    box-shadow: 3px 4px 37px 2px rgba(0, 0, 0, 0.31);
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: -12px;
+    right: -9px;
+    opacity: 1;
+    &:hover {
+      opacity: 1!important;
+    }
+  }
+  .write-us {
+    color: #909090;
+  }
+  .order-info {
+    background-color: #f6f6f6;
+    padding: 1rem;
+  }
+  .wrap-modal {
+    max-width: 850px;
+    margin: 2.5rem auto;
+  }
+  .order-header {
+    padding: 1rem;
+    background-color: #ecf1e0;
+    .control-form {
+      max-width: 295px;
+    }
+    .label-form {
+      min-width: 100px;
+      margin-right: 15px;
+    }
+  }
+  .w90px {
+    width: 90px;
+  }
+  .w170px {
+    width: 175px;
+  }
+  .wrap-casco-info {
+    max-width: 380px;
+    width: 100%;
+  }
+  .address-block {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    div {
+      &+div {
+        margin-left: 5rem;
+      }
+    }
+  }
+}
+.modal-compare {
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+}
+.casco-compare {
+  .compare-content {
+    .compare-ind {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      max-width: 20px;
+      margin-right: 0.5rem;
+      background: #95c41e url("../img/icons/arrowcompare.svg") no-repeat center;
+      background-size: 14px 10px;
+      &.del {
+        background: #fa8989 url("../img/icons/closecompare.svg") no-repeat center;
+        background-size: 14px;
+      }
+    }
+    .compare-content-item {
+      padding: 0.8rem;
+      transition: background-color .3s;
+      cursor: pointer;
+    }
+    .compare-content-item:nth-child(odd) {
+      background-color: #ebebeb;
+      &:hover {
+        background-color: #ebfac3;
+      }
+    }
+    .compare-content-item:nth-child(even) {
+      background-color: #f6f6f6;
+      &:hover {
+        background-color: #f4fcde;
+      }
+    }
+  }
+  .compare-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-color: #b2d35e;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+    min-height: 134px;
+    .price {
+      font-size: 36px;
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+  .compare-item.active {
+    .compare-content-item:nth-child(odd) {
+      background-color: #ebfac3;
+    }
+    .compare-content-item:nth-child(even) {
+      background-color: #f4fcde;
+    }
+  }
+}
+.modal-open {
+  position: fixed;
+  padding-top: 0;
+}
+.modal-open .header { z-index: 0; }
+@media (min-width: 1200px) {
+  .modal-lg {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 991px) {
+  .flex-sm-column-center {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flex-column-sm {
+    text-align: center;
+    margin: 0.5rem 0;
+    flex-direction: column;
+  }
+  .modal {
+    .address-block {
+      div {
+        text-align: center;
+        &+div{
+          margin-left: 0;
+        }
+      }
+    }
+    .wrap-modal {
+      margin: 1rem 0;
+    }
+    .separate {
+      margin: 1.2rem 0;
+    }
+    .wrap-casco-info,
+    .w170px,
+    .w90px {
+      text-align: center;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .casco-compare .compare-header {
+    min-height: 80px;
+    font-size: 20px;
+    .price {
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 470px) {
+  .modal {
+    .order-info,
+    .order-header {
+      padding: 0.5rem;
+    }
+    .order-header {
+      .label-form {
+        display: none;
+      }
+      .control-form {
+        max-width: 100%;
+      }
+    }
+  }
+}

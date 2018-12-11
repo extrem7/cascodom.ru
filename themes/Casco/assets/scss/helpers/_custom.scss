@@ -1,0 +1,19 @@
+.diy-tooltip {
+  white-space: nowrap;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 60px;
+}
+
+.calculator .custom-select {
+  background: none !important;
+  padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    .modal-dialog {
+   //   margin-top: 60px;
+    }
+  }
+}
